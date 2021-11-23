@@ -29,14 +29,13 @@ function render(variables = {}) {
   let cover = `<div class="cover"><img src="${variables.background}" /></div>`;
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
   if (variables.name == null) variables.name = "Lucy";
-  if (variables.lastname == null) variables.lastname = "Algo";
-  if (variables.role == null) variables.role = "Select_role";
-  if (variables.city == null) variables.city = "Select_city";
-  if (variables.country == null) variables.country = "Select_country";
+  if (variables.lastname == null) variables.lastname = "Boillete";
+  if (variables.role == null) variables.role = "Web Developer";
+  if (variables.city == null) variables.city = "Miami";
+  if (variables.country == null) variables.country = "USA";
   if (variables.socialMediaPosition == "right")
     variables.socialMediaPosition = "position-right";
-  if (variables.socialMediaPosition == "left")
-    variables.socialMediaPosition = "position-left";
+
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
